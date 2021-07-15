@@ -27,6 +27,18 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+           
+    <repository>
+        <id>nexus</id>
+        <name>releases nexus repository</name>
+        <url>http://13.229.234.46:8081/repository/pipeline_job-releases/</url>
+      </repository>
+      
+      <snapshotRepository>
+        <id>nexus</id>
+        <name>snapshot nexus repository</name>
+        <url>http://13.229.234.46:8081/repository/pipeline_job-snapshot/</url>
+      </snapshotRepository>       
   </distributionManagement>
 
   <build>
